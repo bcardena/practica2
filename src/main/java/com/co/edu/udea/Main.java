@@ -25,9 +25,9 @@ public class Main {
                 boolean esSecuenciaValida = automata.analizarSecuencia(secuencia);
 
                 if (esSecuenciaValida) {
-                    System.out.println("Secuencia aceptada");
+                    System.out.println("Secuencia aceptada, contiene número de ceros pares o unos impares");
                 } else {
-                    System.out.println("Secuencia no aceptada");
+                    System.out.println("Secuencia no aceptada, no contiene número de ceros pares ni unos impares");
                 }
             } else {
                 System.out.println("Solo puede ingresar unos y ceros, intente nuevamente");

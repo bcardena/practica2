@@ -5,9 +5,10 @@ public class Automata {
     public boolean analizarSecuencia(String secuencia) {
         String estado = "q0";
 
+        System.out.println("La secuencia leída es: " + secuencia);
+
         for (int i = 0; i < secuencia.length(); i++) {
             char caracter = secuencia.charAt(i);
-            System.out.println(caracter);
 
             switch (estado) {
                 case "q0":
@@ -41,6 +42,6 @@ public class Automata {
 
         }
 
-        return estado.equals("q1");
+        return estado.equals("q0") || estado.equals("q1") || estado.equals("q3");
     }
 }
